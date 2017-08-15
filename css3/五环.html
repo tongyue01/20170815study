@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .circle,.circle::after{
+            width:200px;
+            height:200px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius:50% ;
+            -o-border-radius:50% ;
+            -ms-border-radius: 50%;
+            border-radius:50% ;
+            border:10px solid;
+            position:absolute;
+            top:0;
+            left:0
+        }
+        .circle::after{
+            content:"";
+            top:-10px;
+            left:-10px;
+        }
+        .blue{
+            -webkit-border-color:blue;
+            -moz-border-color:blue;
+            -o-border-color:blue;
+            -ms-border-color:blue;
+            border-color:blue;
+            top:0;
+            left:0;
+        }
+        .blue.circle::after{
+            -webkit-border-color:blue;
+            -moz-border-color:blue;
+            -o-border-color:blue;
+            -ms-border-color:blue;
+            border-color:blue;
+            z-index:1;
+            -webkit-border-bottom-color:transparent;
+            -moz-border-bottom-color: transparent;
+            -o-border-bottom-color: transparent;
+            -ms-border-bottom-color:transparent;
+            border-bottom-color: transparent;
+        }
+        .black{
+            webkit-border-color:black;
+            -moz-border-color:black;
+            -o-border-color:black;
+            -ms-border--color:black;
+            border-color:black;
+            top:0;
+            left:230px;
+        }
+        .black.circle::after{
+            webkit-border-color:black;
+            -moz-border-color:black;
+            -o-border-color:black;
+            -ms-border--color:black;
+            border-color:black;
+            z-index: 1;
+            -webkit-border-left-color:transparent;
+            -moz-border-left-color: transparent;
+            -o-border-left-color: transparent;
+            -ms-border-left-color:transparent;
+            border-left-color: transparent;
+        }
+        .red{
+            -webkit-border-color:red;
+            -moz-border-color:red;
+            -o-border-color:red;
+            -ms-border-color:red;
+            border-color:red;
+            top:0;
+            left:460px;
+        }
+        .red.circle::after{
+            -webkit-border-color:red;
+            -moz-border-color:red;
+            -o-border-color:red;
+            -ms-border-color:red;
+            border-color:red;
+            z-index: 2;
+            -webkit-border-left-color:transparent;
+            -moz-border-left-color: transparent;
+            -o-border-left-color: transparent;
+            -ms-border-left-color:transparent;
+            border-left-color: transparent;
+        }
+        .yellow{
+            -webkit-border-color:yellow;
+            -moz-border-color:yellow;
+            -o-border-color:yellow;
+            -ms-border-color:yellow;
+            border-color:yellow;
+            top:110px;
+            left:110px;
+        }
+        .yellow.circle::after{
+            -webkit-border-color:yellow;
+            -moz-border-color:yellow;
+            -o-border-color:yellow;
+            -ms-border-color:yellow;
+            border-color:yellow;
+        }
+        .green{
+            -webkit-border-color:green;
+            -moz-border-color:green;
+            -o-border-color:green;
+            -ms-border-color:green;
+            border-color:green;
+            top:110px;
+            left:340px;
+        }
+        .green.circle::after{
+            webkit-border-color:green;
+            -moz-border-color:green;
+            -o-border-color:green;
+            -ms-border-color:green;
+            border-color:green;
+            z-index:1;
+            -webkit-border-top-color:transparent;
+            -moz-border-top-color: transparent;
+            -o-border-top-color: transparent;
+            -ms-border-top-color:transparent;
+            border-top-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="circle blue"></div>
+    <div class="circle black"></div>
+    <div class="circle red"></div>
+    <div class="circle yellow"></div>
+    <div class="circle green"></div>
+</body>
+</html>
